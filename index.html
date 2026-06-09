@@ -310,37 +310,114 @@ overflow-y:auto;
 
 @media(max-width:768px){
 
+/* HEADER */
 .topbar{
-flex-wrap:wrap;
+padding:10px 15px;
 height:auto;
-padding:10px;
-gap:10px;
+gap:8px;
+}
+
+.logo{
+font-size:14px;
+line-height:1.2;
+}
+
+.logo .sub{
+font-size:9px;
 }
 
 .title{
-font-size:18px;
+font-size:16px;
 }
 
+.user{
+padding:8px 12px;
+}
+
+/* LAYOUT */
 .layout{
 flex-direction:column;
 }
 
+/* MENU */
 .sidebar{
 width:100%;
-position:relative;
 height:auto;
+padding:15px;
+position:relative;
+box-shadow:none;
 }
 
+.sidebar h3{
+margin-bottom:12px;
+font-size:14px;
+}
+
+.sidebar ul{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+}
+
+.sidebar li{
+margin:0;
+padding:12px;
+text-align:center;
+font-size:14px;
+}
+
+/* CONTENT */
+.container{
+padding:10px;
+}
+
+.main-card{
+padding:18px;
+border-radius:15px;
+}
+
+/* JUDUL */
+h1{
+font-size:22px;
+padding:18px;
+}
+
+/* SUB JUDUL */
+h2{
+font-size:17px;
+padding:12px;
+}
+
+/* FORM */
 .form-grid{
 grid-template-columns:1fr;
 }
 
 .vital-grid{
 grid-template-columns:1fr 1fr;
+gap:10px;
 }
 
+input,
+textarea{
+font-size:16px;
+}
+
+/* BUTTON */
 .button-group{
 flex-direction:column;
+}
+
+.button-group button{
+height:48px;
+font-size:15px;
+}
+
+/* OUTPUT */
+.output{
+padding:15px;
+font-size:14px;
+min-height:180px;
 }
 
 }
